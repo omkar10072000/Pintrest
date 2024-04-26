@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/feed.css' />
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <nav>
+         <div class="logo">
+           <h5>LOGO</h5>
+             
+         </div>
+         <ul class="navLink">
+           <li><a href="/feed">feed</a></li>
+           <li><a href="/profile">profile</a></li>
+           <li><a href="/logout">logout</a></li>
+         </ul>
+         <div class="lines">
+             <div class="l1"></div>
+             <div class="l2"></div>
+             <div class="l3"></div>
+         </div>
+       </nav>
+   
+   <header>
+     <h1>Pinterest Style Image Galley with Responsive Navigation Bar</h1>
+   </header> 
+   
+     
+   <div class="container">
+         
+     
+         
+         
+       
+         
+   
+         
+    <div class="post-container mt-4" style=" display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Adjust this value based on your needs */
+    padding: 10px;">
+        <% userIds.forEach(user => { %>
+         <% console.log(user,'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ-----------------------------343567890-9876890876587908786576890998787----------------\n\n');%>
+          <% console.log('type of user =============>>>>>',user.length) %>
+         <% console.log(user,'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ-----------------------------343567890-9876890876587908786576890998787----------------\n\n');%>
+
+         <% if(user.length > 0) {%>     
+        <% user.forEach(userid => { %>
+            <% console.log(userid.image) %>
+            <% console.log(userid.imageText) %>
+            <div class="box">
+              <a href="https://sciencecalx.com/wp-content/uploads/2023/07/chemistry.png" >
+              <img src="/images/uploads/<%= userid.image %>" alt="image"></a>
+          <div class="caption"><%= userid.imageText %></div>
+</div> 
+        <% }) %>
+         <% }%>
+        <% }) %>
+    </div>
+         
+   </div>
+       
+       
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+         <script src="app.js"></script>
+   </body>
+                     
+   
+</body>
+</html>
